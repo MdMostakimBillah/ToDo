@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h3,span{
+    color: #fff;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #23272e;
+    height: 100vh;
+}
+.add-task {
+    margin-bottom: 15px;
+    width: 500px;
+}
+.add-task form{
+    width: 100%;
+    text-align: center;
+}
+.add-task form input[type="text"]{
+    padding: 10px 10px;
+    width: 80%;
+}
+.add-task form input[type="text"]:focus{
+    outline-color: rgb(7, 122, 122);
+}
+.add-task form input[type="submit"]{
+    padding: 10px 10px;
+    width: 15%;
+}
+
+ul{
+    margin-top: 10px;
+}
+ul li{
+    list-style: none;
+    line-height: 30px;
+}
+input[type="checkbox"], button, .add-task form input[type="submit"]{
+    cursor: pointer;
+    margin-right: 10px;
+}
+button{
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+.list{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: start;
+}
+h3{
+    text-align: center;
+}
+#items li{
+    display: flex;
+    align-items: center;
+}
+#doneList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:500px) {
+    .add-task {
+        width: 98%;
+    }
+    .list{
+        width: 98%;
+        display: block;
+    }
+}
